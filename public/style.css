@@ -1,0 +1,50 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+hr {
+    margin-bottom: 0px;
+}
+
+.arab {
+    font-family: 'Scheherazade New', serif;
+}
+
+.row_ayat .arab {
+    line-height: 4rem;
+}
+
+.text-small {
+    font-size: 0.8rem;
+}
+
+.heading-surah {
+    margin-bottom: -4px;
+    font-size: 1.20rem;
+}
+
+
+/* Ayat di Surat Start */
+.ayat {
+    cursor: pointer;
+}
+
+.ayat:hover {
+    color: #11C5C6;
+}
+/* Ayat di Surat End */
+
+/* Tafsir */
+
+.tafsir {
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
