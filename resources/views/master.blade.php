@@ -3,5 +3,9 @@
 @yield('content')
 
 
-@yield('js-page')
 @include('components.footer')
+
+@yield('js-page')
+
+</body>
+</html>

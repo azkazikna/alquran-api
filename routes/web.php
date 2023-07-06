@@ -14,12 +14,14 @@ use App\Http\Controllers\ApiController;
 |
 */
 
+Route::get('/', [ApiController::class, 'index']);
+
 Route::get('/quran', function() {
     return view('quran');
 });
 
-Route::get('/surah/{nomor}', function($nomor) {
-    return view('surah', ['nomor' => $nomor]);
+Route::get('/surah/{id_surah}', function($id_surah) {
+    return view('surah', ['id_surah' => $id_surah]);
 });
 
 Route::get('/doa', function() {

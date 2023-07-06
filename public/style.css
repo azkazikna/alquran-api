@@ -19,6 +19,21 @@ hr {
     line-height: 4rem;
 }
 
+/* Ayat di Surat Start */
+.word-arab {
+    cursor: pointer;
+}
+
+.word-arab:hover {
+    background-color: rgba(17, 197, 198, 0.1);
+}
+
+.arti-perkata {
+    font-size: 0.9rem!important;
+}
+
+/* Ayat di Surat End */
+
 .text-small {
     font-size: 0.8rem;
 }
@@ -28,16 +43,18 @@ hr {
     font-size: 1.20rem;
 }
 
-
-/* Ayat di Surat Start */
-.ayat {
-    cursor: pointer;
+.info-surah h1,
+.info-surah h2, 
+.info-surah h3, 
+.info-surah h4, 
+.info-surah h5, 
+.info-surah h6 {
+    font-size: 1rem;
+    font-weight: 800;
 }
 
-.ayat:hover {
-    color: #11C5C6;
-}
-/* Ayat di Surat End */
+
+
 
 /* Tafsir */
 
@@ -48,3 +65,130 @@ hr {
 .cursor-pointer {
     cursor: pointer;
 }
+
+/* Tajwid Start */
+
+.madda_necessary {
+color: #2979ff; /* Biru Terang */
+}
+
+.end {
+color: #e53935; /* Merah */
+}
+
+.madda_normal {
+color: #43a047; /* Hijau Terang */
+}
+
+.ham_wasl {
+color: #fb8c00; /* Oranye */
+}
+
+.idgham_wo_ghunnah {
+color: #9c27b0; /* Ungu */
+}
+
+.madda_permissible {
+color: #009688; /* Hijau Tua */
+}
+
+.laam_shamsiyah {
+color: #ec407a; /* Merah Muda */
+}
+
+.slnt {
+color: #757575; /* Abu-abu */
+}
+
+.ghunnah {
+color: #795548; /* Cokelat */
+}
+
+.qalaqah {
+color: #000080; /* Biru Tua */
+}
+
+.ikhafa {
+color: #880804; /* Magenta */
+}
+
+.madda_obligatory {
+color: #00bcd4; /* Biru Muda */
+}
+
+.idgham_ghunnah {
+color: #cddc39; /* Hijau Kuning */
+}
+
+.ikhafa_shafawi {
+color: #bdbdbd; /* Abu-abu Terang */
+}
+
+.iqlab {
+color: #ffd700; /* Emas */
+}
+/* Tajwid End */
+  
+  /*------------------------------------*\
+    #SIDEBAR
+  \*------------------------------------*/
+  
+.navbar-side {
+    height: 100%;
+    max-width: 30rem;
+    font-size: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: scroll;
+    z-index: 9999999;
+}
+  
+@media (min-width: 320px) {
+    .navbar-side {
+    width: 80%;
+    }
+}
+  
+    @media (min-width: 320px) and (max-width: 484px) {
+  
+      .navbar-side {
+        width: 85%;
+      }
+  
+    }
+  
+  .side-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .navbar-side {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: 400ms ease;
+    transition: 400ms ease;
+  }
+  
+  .reveal {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: 400ms ease;
+    transition: 400ms ease;
+  }
+  
+  .overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 990;
+  }
+  

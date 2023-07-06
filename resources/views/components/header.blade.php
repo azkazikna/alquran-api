@@ -14,6 +14,7 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/27e42df87e.js" crossorigin="anonymous"></script>
     <title>QuranAzka: Baca Al Qur'an mudah dan praktis</title>
+    <link rel="shortcut icon" href="/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="/style.css">
     @livewireStyles
   </head>
@@ -25,12 +26,17 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-                <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Beranda</a>
-                <a class="nav-link {{ Request::is('quran') ? 'active' : '' }}" href="/quran">Quran</a>
-                <a class="nav-link {{ Request::is('doa') ? 'active' : '' }}" href="/doa">Doa Harian</a>
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </div>
+              <div class="navbar-nav ml-auto">
+                  <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Beranda</a>
+                  <a class="nav-link {{ Request::is('quran') ? 'active' : '' }}" href="/quran">Quran</a>
+                  <a class="nav-link {{ Request::is('doa') ? 'active' : '' }}" href="/doa">Doa Harian</a>
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  <button class="pull-xs-right border-0 bg-light" id="navbarSideButton" type="button">
+                    <i class="fa-solid fa-gear"></i>
+                  </button>
+              </div>
             </div>
         </div>
     </nav>
+
+    
